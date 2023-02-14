@@ -1,0 +1,86 @@
+.benefit{
+    &__container{
+        width: 100%;
+        padding: 100px;
+        &__row{
+            display: flex;
+            justify-content: space-between;
+            gap:18rem;
+            &__left{
+                color: black;
+                font-size: 16px;
+                &__content{
+                    padding-top: 40px;
+                    &__title{
+                        font-size: 45px;
+
+                    }
+                    &__text{
+                    font-size: 15px;
+                    padding-top: 20px;
+                     }
+                &__bottom{
+                    padding-top: 20px;
+                    
+                    &__center{
+                        display: flex;
+                        // justify-content:space-between;
+                        gap:1rem;
+                        padding-top: 10px;
+                    }
+                }
+                
+                &__button{
+
+                 background-color:#140342 ;
+                 height: 50px;
+                 width: 200px;
+                 border-radius: 15px;
+
+                 &__big{
+                    color: white;
+                    text-align:center ;
+                    background-color:#140342 ;
+                 height: 50px;
+                 width: 200px;
+                 border-radius: 15px;
+                 }
+                 & a:hover{
+                    color: antiquewhite;
+                 }
+                 }
+                }
+
+            }
+        }
+    }
+    span{
+        color: #6440FB;
+    }
+    .icon{
+        width: 24px;
+        height: 24px;
+        background-color: #6440FB;
+        border-radius: 25px;
+        color: white;
+    }
+    .submit{
+        padding-top: 20px;
+    }
+   
+    button{
+        font-size: 17px;
+        background-color: #13054b;
+        color: white;
+        border-radius: 9px;
+        width: 200px;
+        height: 60px;
+
+    }
+    button:hover{
+        background-color: aliceblue;
+        color: #13054b ;
+    }
+   
+    
+}

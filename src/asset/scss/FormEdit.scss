@@ -1,0 +1,42 @@
+.EditProfile {
+  width: 50%;
+  display: grip;
+  margin: 10% 60% 10% 20%;
+
+
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  & form{
+padding-right: 40px;
+padding-bottom: 20px;
+
+  }
+  
+  
+ 
+}
+
+input{
+  /* display: flex;
+  justify-content: space-between; */
+  margin-left: 100px;
+  margin-top: 30px;
+  width: 500px;
+  height:50px;
+  border-radius: 10px;
+ 
+  /* gap:20px; */
+
+}
+button{
+     margin-left: 100px;
+  margin-top: 30px;
+  width: 500px;
+  height:50px;
+  border-radius: 10px;
+  background-color: rgb(17, 221, 221);
+}
+button:hover{
+    background-color: aquamarine;
+}
+

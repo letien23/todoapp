@@ -1,0 +1,287 @@
+@import "Footer.scss";
+@import "Banner.scss";
+@import url(Banner.scss);
+@import url(Footer.scss);
+@import url(Benefit.scss);
+@import url(SIgnUp.scss);
+@import url(Contact.scss);
+@import "./UserPage.scss";
+@import "./Card.scss";
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+/* -------------------------------------header------------------------------------- */
+.header{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 1000;
+  background-color: #140342;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+  & .navbar{
+    & .container-fluid{
+        & .navbar-brand, .navbar-collapse{
+            margin-left: 115px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    
+        & .navbar-brand{
+            width: 320px;
+            & img{
+                width: 60%;
+            }
+        }
+
+        & .navbar-nav{
+            & .nav-item{
+                padding-right: 30px;
+
+                & .nav-link{
+                    color: white;
+                    font-size: 120%;
+                    font-weight: 600;
+                    transition: all 0,5s;
+                }
+
+                & .nav-link:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        & .d-flex{
+            & .log-in{
+              text-decoration: none;
+              font-size: 150%;
+              color: white;
+              padding: 10px 30px;
+              transition: all 0.5s;
+            }
+            & .btn__signUp--style{
+                margin-right: 115px;
+                padding: 10px 50px;
+                font-size: 120%;
+                font-weight: 600;
+                background-color: white;
+                color: #140342;
+                border: 2px solid white;
+                transition: all 1s;
+            }
+
+            & .log-in:hover{
+              color: #4e14ed;
+            }
+            & .btn__signUp--style:hover{
+              background-color: #140342;
+              color: white;
+            }
+        }
+    }
+    & .sticky--on{
+      background-color: rgba(255, 255, 255, 0.9);
+      overflow: hidden;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 25px 50px 0px;
+      animation: sticky-header--on 1.5s;
+  }
+  
+  & .sticky--off{
+      background-color: rgba(255, 255, 255, 0);
+      overflow: hidden;
+      animation: sticky-header--off 1.5s;
+  }
+
+  @keyframes sticky-header--on { 
+      from {
+          box-shadow: rgba(0, 0, 0, 0) 0px 25px 50px 0px;
+          background-color: rgba(255, 255, 255, 0);
+      }
+    
+      to {
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 25px 50px 0px;
+          background-color: rgba(255, 255, 255, 0.9);
+      }
+    }
+  
+  @keyframes sticky-header--off { 
+      from {
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 25px 50px 0px;
+          background-color: rgba(255, 255, 255, 0.9);
+      }
+  
+      to {
+          box-shadow: rgba(0, 0, 0, 0) 0px 25px 50px 0px;
+          background-color: rgba(255, 255, 255, 0);
+      }
+  }
+}
+}
+// ---------------------------------------------Banner--------------------------------------------------------
+.banner{
+  margin-top: 6%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-image: url("https://res.cloudinary.com/kyanon-digital/image/upload/v1661163209/bg_m6mdt6.png");
+
+  &__left{
+    padding: 3%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    &__title{
+      color: white;
+      font-size: 250%;
+      font-weight: 900;
+      line-height: 70px;
+      & span{
+        color: #00FF84;
+      }
+    }
+
+    &__description{
+      color: white;
+      font-size: 120%;
+      font-weight: 500;
+      margin: 5% 0%;
+      line-height: 40px;
+    }
+
+    &__btn{
+      & button{
+        padding: 15px 55px;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 120%;
+        background: none;
+      }
+
+      .btn--join-for-free{
+        border: 2px solid #6440FB;
+        background-color: #4e14ed;
+        color: white;
+        transition: all 0.5s;
+      }
+
+      .btn--video-tutorial{
+        border: 2px solid #00FF84;
+        color: #00FF84;
+        margin-left: 20px;
+        transition: all 0.5s;
+      }
+
+      .btn--join-for-free:hover{
+        background: none;
+        color: #6440FB;
+      }
+
+      .btn--video-tutorial:hover{
+        background-color: #00FF84;
+        color: #140342;
+      }
+    }
+    
+    &__row{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+    }
+
+    &__col{
+        margin-top: 100px;
+        cursor: pointer;
+      & p{
+        color: white;
+        display: inline;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__right{
+    position: relative;
+  }
+
+  .banner__row{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: white;
+    width: 380px;
+    border-radius: 20px;
+  }
+
+  .avata{
+    position: relative;
+  }
+
+  .avata-1{
+    position: absolute;
+    top: 30px;
+  }
+
+  .avata-2{
+    position: absolute;
+    top: 500px;
+    left: 200px;
+  }
+
+  .avata-3{
+    position: absolute;
+    top: 80px;
+    right: 290px;
+  }
+
+  .banner__row{
+    position: absolute;
+    bottom: -50px;
+    left: 100px;
+  }
+
+  .banner__row .avata__icon{
+    width: 100px;
+    background-color: #00FF84;
+    padding: 30px;
+    border-radius: 20px 0px 0px 20px;
+  }
+
+  .banner__content{
+    margin-top: 10px;
+    margin-left: 20px;
+
+  }
+
+  .banner__content p{
+    font-size: 120%;
+    font-weight: 700;
+  }
+
+  .content--red{
+    color: #E8543E;
+  }
+
+  .content--blue{
+    color: #6440FB;
+  }
+}

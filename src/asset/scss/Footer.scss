@@ -1,0 +1,113 @@
+.footer {
+  &__container {
+    padding: 5rem;
+    background-color: #140342;
+    color: white;
+    &__header {
+      &__row {
+        display: grid;
+        grid-template-columns: 20% 110%;
+        padding-right: 10px;
+        &__col-auto{
+         display: flex;
+         justify-content: space-evenly;
+         &__socials{
+          display: flex;
+          justify-content: space-between;
+          gap:2rem;
+          &__list{
+            color:white;
+            display: flex;
+            justify-content: space-evenly;
+            gap:2rem;
+          }
+          
+         }
+        }
+      }
+    }
+    &__columns {
+      &__row {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2rem;
+        color: white;
+        &__small {
+          text-align: left;
+          &__title {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+    &__bottom {
+      display: flex;
+      justify-content: space-evenly;
+      &__text {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+        &__content {
+          display: flex;
+          gap: 2rem;
+          & a{
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  &__link__container {
+    display: flex;
+    gap: 2rem;
+    &__column {
+      display: flex;
+      flex-direction: column;
+      
+      & a {
+        color: white;
+        text-decoration: none;
+        padding-block: 0.2rem;
+      }
+      & a:hover{
+        color: rgb(40, 215, 21);
+        text-decoration:solid;
+      }
+    }
+  }
+  .icon{
+    display: flex;
+    color:white;
+    text-decoration: none;
+    
+  }
+ .form__group {
+  width:100%;
+  background-color: #d1ddd2;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.form__group:hover {
+  background-color: #4945a0;
+}
+input {
+  border-radius: 10px;
+  height: 20px;
+}
+button:hover{
+ 
+  background-color: rgb(29, 204, 216);
+}
+button{
+ border-radius: 8px;
+}
+
+
+}
